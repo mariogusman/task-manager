@@ -1,19 +1,9 @@
 import os
-from flask import (
-    Flask,
-    flash,
-    render_template,
-    redirect,
-    request,
-    session,
-    url_for,
-)
-from flask.templating import render_template  # imports flask
+from flask import Flask, flash, render_template, redirect, request, session, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
-
-if os.path.exists("env.py"):  # imports creds
+if os.path.exists("env.py"):
     import env
 
 
